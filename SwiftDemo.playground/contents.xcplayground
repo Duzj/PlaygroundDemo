@@ -5,5 +5,7 @@
         <page name='demo'/>
         <page name='protocol协议'/>
         <page name='property属性'/>
+        <page name='init构造器'/>
+        <page name='循环引用'/>
     </pages>
 </playground>
