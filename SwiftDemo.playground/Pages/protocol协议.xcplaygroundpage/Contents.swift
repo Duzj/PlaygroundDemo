@@ -1,7 +1,7 @@
 //: [Previous](@previous)
 
 import Foundation
-
+import UIKit
 var str = "Hello, playground"
 //协议用var 关键字声明变量属性 , 在声明的属性后面加上 {set  get}来表明属性是可读可写的 ,可读则只用{get}表示
 protocol someProtocal{
@@ -44,3 +44,17 @@ sayHelloTo(someOne: jhon)
 //检查协议一致性
 
 
+
+protocol Vehicle{
+    var numberOfWheels : Int {get}
+    var color : UIColor {get}
+    mutating func changeColor()
+}
+
+struct Car : Vehicle{
+    let numberOfWheels: Int = 4;
+    var color: UIColor = .red;
+    mutating func changeColor() {
+        color = .red;
+    }
+}
